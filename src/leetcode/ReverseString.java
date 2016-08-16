@@ -29,7 +29,7 @@ public TimeCount timeCount;
 		if (s.length()<=1) {
 			return s;
 		}else {
-			return s.substring(s.length()-1,s.length())+I(s.substring(0,s.length()-1));
+			return new StringBuffer(s).reverse().toString();
 		}
 	}
 	public String II(String s) {
